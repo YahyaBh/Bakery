@@ -107,23 +107,114 @@ export default function Home() {
 
 
         <div className="cake-container">
-          <div className="cake">
-            <img className="img-cake" src={'/assets/images/cakeExample.png'} />
+          {Array.from({ length: 8 }).map((_, index) => (
+            <div className="cake">
+              <img className="img-cake" src={'/assets/images/cakeExample.png'} />
 
-            <div className="description">
-              <div className="text">
-                <h4>Chocolate Cake</h4>
-                <h3>200 DH</h3>
-              </div>
+              <div className="description">
+                <div className="text">
+                  <h4>Chocolate Cake</h4>
+                  <h3>200 DH</h3>
+                </div>
 
-              <div className="buy">
-              <button class="button-55" role="button">&#8599;</button>
+                <div className="buy">
+                  <button className="button-55" role="button">&#8599;</button>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
+
 
         </div>
+
+        <button className="button-more">Voir Les Offres</button>
+
+
       </div>
+
+
+      <div className="categories">
+
+        <div className="left-category">
+
+          <h2>
+            Catégories
+            de produits
+          </h2>
+
+          <p>Chez Delice Bites, nous avons une sélection variée de
+            pâtisseries qui sauront satisfaire toutes vos envies
+            gourmandes. Que vous soyez à la recherche d’un gâteau
+            d’anniversaire, de viennoiseries fraîches ou d’une option
+            sans gluten, nous avons tout ce qu’il vous faut.</p>
+        </div>
+
+
+
+        <div className="right-category">
+          <div class="div1">
+            <p>Pâtisseries fines </p> <span>12</span>
+          </div>
+          <div class="div2">
+            <p>Gâteaux </p> <span>12</span>
+          </div>
+          <div class="div3">
+            <p>Gâteaux d anniversaire</p>  <span>22</span>
+          </div>
+          <div class="div4">
+            <p>boissons</p> <span>12</span>
+          </div>
+          <div class="div5">
+            <p>Produits sans gluten </p> <span>9</span>
+          </div>
+          <div class="div6">
+            <p>...</p>
+          </div>
+          <div class="div7">
+            <p>Tartes et viennoiseries</p>  <span>10</span>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div className="contact">
+
+        <h2>Nous contacter</h2>
+
+        <p>Une question ou une commande spéciale ? Nous sommes à votre
+          disposition ! Remplissez notre formulaire de contact et nous reviendrons
+          vers vous rapidement.
+        </p>
+
+
+        <img className="left-image" src={'/assets/images/contactCroissant.png'} alt="Croissant" />
+        <img className="right-image" src={'/assets/images/contactCupcake.png'} alt="Cupcake" />
+
+        <form action="">
+
+          <div className="double">
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder="Prenom" />
+          </div>
+
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Votre message"></textarea>
+          <button>Envoyer</button>
+        </form>
+      </div>
+
+
+      <footer>
+        <h2>Delice Bites</h2>
+
+        <div className="socials">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </footer>
 
       <script src="https://kit.fontawesome.com/f10e85b721.js" crossorigin="anonymous"></script>
     </>
