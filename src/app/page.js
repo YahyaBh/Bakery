@@ -152,25 +152,25 @@ export default function Home() {
 
 
         <div className="right-category">
-          <div class="div1">
+          <div className="div1">
             <p>Pâtisseries fines </p> <span>12</span>
           </div>
-          <div class="div2">
+          <div className="div2">
             <p>Gâteaux </p> <span>12</span>
           </div>
-          <div class="div3">
+          <div className="div3">
             <p>Gâteaux d anniversaire</p>  <span>22</span>
           </div>
-          <div class="div4">
+          <div className="div4">
             <p>boissons</p> <span>12</span>
           </div>
-          <div class="div5">
+          <div className="div5">
             <p>Produits sans gluten </p> <span>9</span>
           </div>
-          <div class="div6">
+          <div className="div6">
             <p>...</p>
           </div>
-          <div class="div7">
+          <div className="div7">
             <p>Tartes et viennoiseries</p>  <span>10</span>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <script src="https://kit.fontawesome.com/f10e85b721.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/f10e85b721.js" crossOrigin="anonymous"></script>
     </>
   );
 }
