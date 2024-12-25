@@ -57,6 +57,23 @@ nav {
     border-radius: 10px;
     padding: 12px 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 20px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    ul {
+      display: none;
+    }
+
+    button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
 }
 
 .hero {
@@ -167,6 +184,33 @@ nav {
       width: 28dvw;
       bottom: 0;
       right: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-text {
+      padding: 20px 10px;
+      margin: 30px;
+      max-width: 90%;
+      box-sizing: border-box;
+
+      .hero-content {
+        width: 100%;
+        padding: 0;
+        gap: 30px;
+
+        h1 {
+          font-size: 26px;
+          color: var(--primary);
+          font-family: SEC;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 550;
+          color: var(--primary);
+        }
+      }
     }
   }
 }
