@@ -3,7 +3,7 @@ import "./page.scss";
 export default function Home() {
   return (
 
-    <>
+    <body>
 
       <nav>
         <h3>Delice Bites</h3>
@@ -93,11 +93,10 @@ export default function Home() {
         </div>
       </div>
 
-
       <div className="promos">
 
         <div className="text-container">
-          <h2>Découvrez nos <br /> créations -20%</h2>
+          <h2>Découvrez nos <br/> créations -20%</h2>
 
           <p>
             Restez à l’affût de nos promotions exclusives et bénéficiez de réductions sur une sélection de pâtisseries. C’est l’occasion de découvrir nos nouveautés à des prix irrésistibles.
@@ -108,7 +107,7 @@ export default function Home() {
 
         <div className="cake-container">
           {Array.from({ length: 8 }).map((_, index) => (
-            <div className="cake">
+            <div className="cake" key={index}>
               <img className="img-cake" src={'/assets/images/cakeExample.png'} />
 
               <div className="description">
@@ -201,7 +200,7 @@ export default function Home() {
 
           <input type="email" placeholder="Email" />
           <textarea placeholder="Votre message"></textarea>
-          <button>Envoyer</button>
+          <button type="submit">Envoyer</button>
         </form>
       </div>
 
@@ -217,6 +216,6 @@ export default function Home() {
       </footer>
 
       <script src="https://kit.fontawesome.com/f10e85b721.js" crossOrigin="anonymous"></script>
-    </>
+    </body>
   );
 }
